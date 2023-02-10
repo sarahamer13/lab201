@@ -25,22 +25,22 @@ if (question2 === 'yes'){
 
 if (question2 === 'no'){
     prompt ('Are you kidding me!')
-    alert ('I will serve you ice cream for you to try')
+    alert ('I will serve you some to try')
 }
 
-let question3 = prompt ('Do you like walnuts on your ice cream?');
+let question3 = prompt ('Do you like walnuts on your ice cream?').toUpperCase();
 console.log (question3);
 alert ('You said '+ question3)
 
-if (question3 === 'Yes'){
+if (question3 === 'YES'){
     alert ('Me too, I love walnuts!')
 }
 
-if (question3 === 'No'){
+if (question3 === 'NO'){
     alert ('I think you should try it!')
 }
 
-let question4 = prompt ('Do you like brownies with ice cream');
+let question4 = prompt ('Do you like brownies with ice cream').toLowerCase();
 console.log (question4);
 alert ('You said '+ question4)
 
