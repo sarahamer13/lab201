@@ -6,7 +6,7 @@ alert ('Hello '  +  username  + ' Welcome to my Site!');
 function getBoybands(){
     let Boybands = prompt("Do I like Boybands?");
     //if (Boybands == " " || Boybands== null ||Boybands == undefined){
-    if (Boybands === 'yes' || Boybands === 'no'){
+    if (Boybands === 'y' || Boybands === 'n'){
     //alert ("Try again! where are you going?");
    // getBoybands ();
         alert ("Backstreet boys fan in the house!");
