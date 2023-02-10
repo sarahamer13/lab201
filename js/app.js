@@ -3,16 +3,12 @@
 let username = prompt ('what is your name?');
 alert ('Hello '  +  username  + ' Welcome to my Site!');
 
-function getBoybands(){
-    let Boybands = prompt("Do I like Boybands?");
-    //if (Boybands == " " || Boybands== null ||Boybands == undefined){
+let Boybands = prompt("Do I like Boybands?"); {
     if (Boybands === 'y' || Boybands === 'n'){
-    //alert ("Try again! where are you going?");
-   // getBoybands ();
+        alert ("Backstreet boys fan in the house")
+     } else if (Boybands == 'yes' || Boybands == 'no')
         alert ("Backstreet boys fan in the house!");
     } 
-}
-getBoybands()
 
 let question2 = prompt ('Do you want ice cream?')
 console.log (question2);
