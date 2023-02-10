@@ -10,7 +10,7 @@ let Boybands = prompt ("Do I like Boybands?");{
         alert ("Boybands are here to stay!");
     } 
 
-let question2= prompt ('Do you want ice cream?');{
+let question2 = prompt ('Do you want ice cream?');{
 if (question2 === 'y' || question2 === 'yes'){
     alert ('Great, here is some ice cream')
  } else if (question2 === 'n' || question2 === 'no')
@@ -19,7 +19,7 @@ if (question2 === 'y' || question2 === 'yes'){
 console.log (question2);
 alert ('You said '+ question2)
 
-let question3= prompt ('What kind of flavor?');{
+let question3 = prompt ('What kind of flavor?');{
     if (question3 === 'y' || question3 === 'yes'){
         alert ('That is an awesome choice!')
      } else if (question3 === 'n' || question3 === 'no')
