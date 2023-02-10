@@ -29,9 +29,9 @@ console.log (question3);
 alert ('You said '+ question3)
 
 let question4 = prompt ('Do you like walnuts on your ice cream?').toUpperCase();
-    if (question4 === 'y' || question4 === 'yes'){
+    if (question4 === 'Y' || question4 === 'YES'){
         alert ('Me too, I love walnuts!')
-     } else if (question4 === 'n' || question4 === 'no')
+     } else if (question4 === 'N' || question4 === 'NO')
         alert ('Are you kidding me!');
 
  console.log (question4);
