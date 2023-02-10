@@ -5,10 +5,10 @@ alert ('Hello '  +  username  + ' Welcome to my Site!');
 
 function getBoybands(){
     let Boybands = prompt("Do I like Boybands?");
-    if (Boybands == " " || Boybands== null ||Boybands == undefined){
-    alert ("Try again! where are you going?");
-    getBoybands ();
-    } else {
+    //if (Boybands == " " || Boybands== null ||Boybands == undefined){
+    if (Boybands === 'yes' || Boybands === 'no'){
+    //alert ("Try again! where are you going?");
+   // getBoybands ();
         alert ("Backstreet boys fan in the house!");
     } 
 }
