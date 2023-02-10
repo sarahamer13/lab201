@@ -22,7 +22,7 @@ alert ('You said '+ question2)
 let question3= prompt ('What kind of flavor?');{
     if (question3 === 'y' || question3 === 'yes'){
         alert ('That is an awesome choice!')
-     } else if (question2 === 'n' || question2 === 'no')
+     } else if (question3 === 'n' || question3 === 'no')
         alert ('It is okay if you do not want any!');
     } 
 console.log (question3);
