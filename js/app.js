@@ -19,7 +19,7 @@ if (question2 === 'y' || question2 === 'yes'){
 console.log (question2);
 alert ('You said '+ question2)
 
-let question3 = prompt ('What kind of flavor?');{
+let question3 = prompt ('Do you want sprinkles');{
     if (question3 === 'y' || question3 === 'yes'){
         alert ('That is an awesome choice!')
      } else if (question3 === 'n' || question3 === 'no')
