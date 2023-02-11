@@ -10,20 +10,20 @@ let Boybands = prompt ("Do I like Boybands?");{
         alert ("Boybands are here to stay!");
     } 
 
-let question2 = prompt ('Do you want ice cream?');{
+let question2 = prompt ('Do I like Westlife band?');{
 if (question2 === 'y' || question2 === 'yes'){
-    alert ('Great, here is some ice cream')
+    alert ('You are right, I love Westlife')
  } else if (question2 === 'n' || question2 === 'no')
-    alert ('I will serve you some anyhow!');
+    alert ('You are wrong, it is my favorite band!');
 } 
 console.log (question2);
 alert ('You said '+ question2)
 
-let question3 = prompt ('Do you want sprinkles');{
+let question3 = prompt ('Did I go to Ireland');{
     if (question3 === 'y' || question3 === 'yes'){
-        alert ('That is an awesome choice!')
+        alert ('You are right!')
      } else if (question3 === 'n' || question3 === 'no')
-        alert ('It is okay if you do not want any!');
+        alert ('You are wrong! I went last year');
     } 
 console.log (question3);
 alert ('You said '+ question3)
