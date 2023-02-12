@@ -43,3 +43,64 @@ let question4 = prompt ('Do you like walnuts on your ice cream?').toLowerCase();
       alert ('It is okay, it is a new trend!')
 
 console.log (question5);
+
+let question6 = [
+    'How many countries have I lived in?'
+];
+
+let answers = [
+    '4'
+];
+
+for (let i = 0; i < 4; i ++) {
+    let response = prompt (question6[0]);
+    if (response === answers [0]) {
+        alert ('You are correct');
+        score ++;
+        break;
+    }
+ else if (response === '1' || response === '2') {
+    alert ('Your guess is way too low');
+}
+
+else if (response === '3') {
+    alert ('Oh you are close');
+}
+}
+
+let question7 = [
+    'What is my favorite country to visit?'
+];
+
+let newAnswers = [
+    'France',
+    'Switzerland',
+    'Monaco'
+];
+
+let guess = false;
+for (let i = 0; i < 6; i++) {
+    if (guess === true) {
+    console.log ('Guess is true, break i loop');
+    break;
+    }
+}
+
+let response = prompt (question7 [0]);
+for (let b = 0; b < newAnswers.length; b ++) {
+    if (response === newAnswers [b]){
+        alert ('You are correct');
+        score ++;
+        guess = true;
+        break;
+    }
+}
+
+if (guess === false) {
+    alert ('Hint: Bonjour');
+}
+
+alert ('Correct answers were France, Switzerland, and Monaco');
+
+alert ('You score' + score +' out of 7');
+
