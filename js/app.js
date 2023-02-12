@@ -68,6 +68,8 @@ else if (response === '3') {
 }
 }
 
+
+
 let question7 = [
     'What is my favorite country to visit?'
 ];
@@ -80,27 +82,32 @@ let newAnswers = [
 
 let guess = false;
 for (let i = 0; i < 6; i++) {
+    console.log ('i loop')
     if (guess === true) {
     console.log ('Guess is true, break i loop');
     break;
     }
-}
 
 let response = prompt (question7 [0]);
 for (let b = 0; b < newAnswers.length; b ++) {
+    console.log ('b loop');
     if (response === newAnswers [b]){
         alert ('You are correct');
         score ++;
         guess = true;
         break;
     }
+    else {
+        console.log(newAnswers[b] + 'is wrong');
+    }
 }
 
 if (guess === false) {
-    alert ('Hint: Bonjour');
+    alert ('Hint: three countries that speaks french');
+}
 }
 
 alert ('Correct answers were France, Switzerland, and Monaco');
 
-alert ('You score' + score +' out of 7');
+alert ('You scored' + score +' out of 7');
 
