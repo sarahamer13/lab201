@@ -44,19 +44,22 @@ let question4 = prompt ('Do you like walnuts on your ice cream?').toLowerCase();
 
 console.log (question5);
 
+let score = 0
+
 let question6 = [
     'How many countries have I lived in?'
 ];
 
 let answers = [
-    '4'
+    4
 ];
 
 for (let i = 0; i < 4; i ++) {
     let response = prompt (question6[0]);
-    if (response === answers [0]) {
+    response = parseInt(response)
+    if (response === answers[0]) {
         alert ('You are correct');
-        score ++;
+        score++;
         console.log ('current score ---->', score);
         break;
     }
@@ -89,13 +92,13 @@ for (let i = 0; i < 6; i++) {
     break;
     }
 
-let response = prompt (question7 [0]);
+let response = prompt (question7[0]);
 response = response.toLocaleLowerCase();
 for (let b = 0; b < Answers.length; b ++) {
     console.log ('B loop', b);
     if (response === Answers[b].toLowerCase()){
         alert ('You are correct');
-        score ++;
+        score++;
         console.log ('current score ---->', score);
         guess = true;
         break;
@@ -106,11 +109,11 @@ for (let b = 0; b < Answers.length; b ++) {
 }
 
 if (guess === false) {
-    alert ('Hint: three countries that speaks french');
+    alert ('Hint: Country where they speak French');
 }
 }
 
 alert ('Correct answers were France, Switzerland, and Monaco');
 
-alert ('You scored' + score +' out of 7');
+alert ('You scored' + score +' out of 2');
 
