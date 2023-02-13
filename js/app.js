@@ -57,6 +57,7 @@ for (let i = 0; i < 4; i ++) {
     if (response === answers [0]) {
         alert ('You are correct');
         score ++;
+        console.log ('current score ---->', score);
         break;
     }
  else if (response === '1' || response === '2') {
@@ -74,7 +75,7 @@ let question7 = [
     'What is my favorite country to visit?'
 ];
 
-let newAnswers = [
+let Answers = [
     'France',
     'Switzerland',
     'Monaco'
@@ -89,16 +90,18 @@ for (let i = 0; i < 6; i++) {
     }
 
 let response = prompt (question7 [0]);
-for (let b = 0; b < newAnswers.length; b ++) {
-    console.log ('b loop');
-    if (response === newAnswers [b]){
+response = response.toLocaleLowerCase();
+for (let b = 0; b < Answers.length; b ++) {
+    console.log ('B loop', b);
+    if (response === Answers[b].toLowerCase()){
         alert ('You are correct');
         score ++;
+        console.log ('current score ---->', score);
         guess = true;
         break;
     }
     else {
-        console.log(newAnswers[b] + 'is wrong');
+        console.log(Answers[b] + 'is wrong');
     }
 }
 
