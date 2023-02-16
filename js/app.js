@@ -3,21 +3,60 @@
 let username = prompt ('what is your name?');
 alert ('Hello '  +  username  + ' Welcome to my Site!');
 
-let Boybands = prompt ("Do I like Boybands?").toLowerCase();
-    if (Boybands === 'y' || Boybands === 'yes'){
-        alert ("Backstreet boys fan in the house")
-     } else if (Boybands === 'n' || Boybands === 'no')
-        alert ("Boybands are here to stay!");
-    
+// let Boybands = prompt ("Do I like Boybands?").toLowerCase();
+//     if (Boybands === 'y' || Boybands === 'yes'){
+//         alert ("Backstreet boys fan in the house")
+//      } else if (Boybands === 'n' || Boybands === 'no')
+//         alert ("Boybands are here to stay!");
+let score = 0;
 
-let question2 = prompt ('Do I like Westlife band?').toLowerCase();
-if (question2 === 'y' || question2 === 'yes'){
-    alert ('You are right, I love Westlife')
- } else if (question2 === 'n' || question2 === 'no')
-    alert ('You are wrong, it is my favorite band!');
+function boybands() {
+  let input = prompt ('Do I like Boybands?').toLowerCase();
+  console.log(input);
+  switch (input) {
+  case 'y':
+  case 'yes':
+    alert ('You\'re correct!');
+    score++;
+    console.log('current score ---->', score);
+    // console.log(Boybands);
+    break;
 
-console.log (question2);
-alert ('You said '+ question2)
+  case 'n':
+  case 'no':
+    alert ('You are wrong');
+    break;
+  default:
+    alert ('Try again');
+
+  }
+}
+boybands();
+
+// let question2 = prompt ('Do I like Westlife band?').toLowerCase();
+// if (question2 === 'y' || question2 === 'yes'){
+//     alert ('You are right, I love Westlife')
+//  } else if (question2 === 'n' || question2 === 'no')
+//     alert ('You are wrong, it is my favorite band!');
+
+// console.log (question2);
+// alert ('You said '+ question2)
+
+function askband() {
+  let message = prompt('Do I like Westlife band?');
+  if (message === 'yes' || message === 'y'){
+    document.write('You are correct');
+    score++;
+    console.log('current score ---->', score);
+  } else if (message === 'no' || message === 'n') {
+    document.write('You are wrong, it is my favorite band!');
+  } else {
+    document.write('Please answer yes or no');
+  }
+  console.log(message);
+}
+askband();
+
 
 let question3 = prompt ('Did I go to Ireland').toLowerCase();
     if (question3 === 'y' || question3 === 'yes'){
@@ -44,7 +83,7 @@ let question4 = prompt ('Do you like walnuts on your ice cream?').toLowerCase();
 
 console.log (question5);
 
-let score = 0
+// let score = 0
 
 let question6 = [
     'How many countries have I lived in?'
@@ -116,4 +155,3 @@ if (guess === false) {
 alert ('Correct answers were France, Switzerland, and Monaco');
 
 alert ('You scored' + score +' out of 2');
-
