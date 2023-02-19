@@ -3,11 +3,6 @@
 let username = prompt ('what is your name?');
 alert ('Hello '  +  username  + ' Welcome to my Site!');
 
-// let Boybands = prompt ("Do I like Boybands?").toLowerCase();
-//     if (Boybands === 'y' || Boybands === 'yes'){
-//         alert ("Backstreet boys fan in the house")
-//      } else if (Boybands === 'n' || Boybands === 'no')
-//         alert ("Boybands are here to stay!");
 let score = 0;
 
 function boybands() {
@@ -19,7 +14,6 @@ function boybands() {
     alert ('You\'re correct!');
     score++;
     console.log('current score ---->', score);
-    // console.log(Boybands);
     break;
 
   case 'n':
@@ -31,16 +25,7 @@ function boybands() {
 
   }
 }
-boybands();
 
-// let question2 = prompt ('Do I like Westlife band?').toLowerCase();
-// if (question2 === 'y' || question2 === 'yes'){
-//     alert ('You are right, I love Westlife')
-//  } else if (question2 === 'n' || question2 === 'no')
-//     alert ('You are wrong, it is my favorite band!');
-
-// console.log (question2);
-// alert ('You said '+ question2)
 
 function askband() {
   let message = prompt('Do I like Westlife band?');
@@ -55,7 +40,7 @@ function askband() {
   }
   console.log(message);
 }
-askband();
+
 
 
 let question3 = prompt ('Did I go to Ireland').toLowerCase();
@@ -83,7 +68,6 @@ let question4 = prompt ('Do you like walnuts on your ice cream?').toLowerCase();
 
 console.log (question5);
 
-// let score = 0
 
 let question6 = [
     'How many countries have I lived in?'
@@ -155,3 +139,9 @@ if (guess === false) {
 alert ('Correct answers were France, Switzerland, and Monaco');
 
 alert ('You scored' + score +' out of 2');
+
+boybands();
+
+askband();
+
+

@@ -11,6 +11,9 @@ h1 {
 h2 {
     font-size: x-large;
     color:brown;
+    border:groove;
+    width: fit-content;
+
     
 
 }
@@ -19,3 +22,19 @@ h3 {
     color:darkgreen;
 
 }
+
+body {
+    background-image: url(../lauterbrunnen.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode:darken;
+    
+    
+}
+
+li {
+    font-weight: bold;
+}
+
+
+
